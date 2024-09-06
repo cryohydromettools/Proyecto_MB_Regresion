@@ -1,0 +1,6 @@
+OGGM_data_Finse/
+env/
+# Ignorar archivos temporales de Python
+*.pyc
+*.pyo
+__pycache__/
