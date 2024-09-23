@@ -1,34 +1,30 @@
-# Project: Machine learning for glacier mass balance modelling
+# Proyecto: Aprendizaje automático para la modelización del balance de masa de glaciares
 
-**Authors:** <br />
+**Autores:** <br />
 Jordi Bolibar <br />
-Facundo Sapienza
+Facundo Sapienza  
+Traducción: Eduardo Villavicencio
 
-## Project description
+## Descripción del proyecto
 
-The project consists on 4 Jupyter notebooks in Python, focused on glacier mass balance modelling using different types of 
-regression methods. Data is extracted using the [Open Global Glacier Model (OGGM)](https://github.com/OGGM/oggm), providing climate, topographical and 
-mass balance data for almost any glacier on Earth. The project is focused on all glaciers in Scandinavia, with the goal
-of learning multi-annual mass balance changes from [the Hugonnet et al. (2021)](https://www.nature.com/articles/s41586-021-03436-z ) 
-geodetic mass balance paper. We cover one of the most popular machine learning libraries for beginners: 
-[scikit-learn](https://scikit-learn.org/stable/).
+El proyecto consiste en 4 notebooks de Jupyter en Python, enfocados en la modelización del balance de masa de glaciares utilizando diferentes métodos de regresión. Los datos se extraen usando el [Open Global Glacier Model (OGGM)](https://github.com/OGGM/oggm), que proporciona datos climáticos, topográficos y de balance de masa para casi cualquier glaciar en la Tierra. El proyecto está centrado en los glaciares de Bajas Latitudes, con el objetivo de aprender sobre los cambios de balance de masa multi-anual a partir del artículo geodésico de balance de masa de [Hugonnet et al. (2021)](https://www.nature.com/articles/s41586-021-03436-z). Cubrimos una de las bibliotecas de aprendizaje automático más populares para principiantes: [scikit-learn](https://scikit-learn.org/stable/).
 
-The following topics are covered in this project:
+Los siguientes temas son cubiertos en este proyecto:
 
-1. [Data pre-processing](https://github.com/Machine-Learning-in-Glaciology-Workshop/Project_MB_Regression/blob/main/1_Preprocessing.ipynb) :earth_africa:: Here we learn how to extract all the necessary climate, topographical and mass balance data for any glacier on Earth using OGGM. 
+1. [Pre-procesamiento de datos](https://github.com/cryohydromettools/Proyecto_MB_Regresion/blob/main/1_Preprocessing.ipynb) :earth_africa:: Aquí aprendemos cómo extraer todos los datos climáticos, topográficos y de balance de masa necesarios para cualquier glaciar en la Tierra usando OGGM.
 
-2. [Data exploration](https://github.com/Machine-Learning-in-Glaciology-Workshop/Project_MB_Regression/blob/main/2_Data_exploration.ipynb) :mag:: Here we learn how understand the dataset we have compiled, what are the assumptions behind it, and how to correctly construct a good dataset for regression machine learning models of physical processes. 
+2. [Exploración de datos](https://github.com/cryohydromettools/Proyecto_MB_Regresion/blob/main/2_Data_exploration.ipynb) :mag:: Aquí aprendemos cómo entender el conjunto de datos que hemos recopilado, cuáles son los supuestos detrás de ellos y cómo construir correctamente un buen conjunto de datos para modelos de aprendizaje automático de regresión de procesos físicos.
 
-3. [Training](https://github.com/Machine-Learning-in-Glaciology-Workshop/Project_MB_Regression/blob/main/3_Training.ipynb) :rocket:: Here we introduce the different machine learning methods that we can use to simulate glacier mass balance. We will explore the characteristics of each one, including their specific hyperparameters. 
+3. [Entrenamiento](https://github.com/cryohydromettools/Proyecto_MB_Regresion/blob/main/3_Training.ipynb) :rocket:: Aquí introducimos los diferentes métodos de aprendizaje automático que podemos usar para simular el balance de masa de glaciares. Exploraremos las características de cada uno, incluidos sus hiperparámetros específicos.
 
-4. [Validation](https://github.com/Machine-Learning-in-Glaciology-Workshop/Project_MB_Regression/blob/main/4_Validation.ipynb) :dart:: Once we are acquainted with the different machine learning models, we will introduce the concepts of cross-validation and hyperparameter selection. We will choose one of the models, which we will tune in detail in cross-validation in order to correctly extrapolate for unseen data. 
+4. [Validación](https://github.com/cryohydromettools/Proyecto_MB_Regresion/blob/main/4_Validation.ipynb) :dart:: Una vez que estemos familiarizados con los diferentes modelos de aprendizaje automático, introduciremos los conceptos de validación cruzada y selección de hiperparámetros. Elegiremos uno de los modelos, que ajustaremos en detalle en la validación cruzada para extrapolar correctamente datos no vistos.
 
-### Bonus projects!
+### ¡Proyectos adicionales!
 
-The main project's aim is to learn the fundamentals of machine learning workflows applied to glacier and geophysical modelling. Nonetheless, for those seeking to dig deeper into the glaciology aspects of this, we propose two bonus projects. These two projects use distributed (gridded) datasets, which have a much higher spatial resolution and complexity. Two additional notebooks can be followed for this:
+El objetivo principal del proyecto es aprender los fundamentos de los flujos de trabajo de aprendizaje automático aplicados a la modelización glaciar y geofísica. No obstante, para aquellos interesados en profundizar en los aspectos glaciológicos, proponemos dos proyectos adicionales. Estos dos proyectos usan conjuntos de datos distribuidos (enrejados), que tienen una mayor resolución espacial y complejidad. Se pueden seguir dos notebooks adicionales para esto:
 
-5. [Distributed data pre-processing](https://github.com/Machine-Learning-in-Glaciology-Workshop/Project_MB_Regression/blob/main/5_Distributed_preprocessing.ipynb) :bar_chart:: In this notebook we learn how to download gridded datasets for any glacier in the world, including geodetic mass balance, ice thickness data, topographical data such as surface slope, aspect, distance to border, and how to easily downscale climate data to those glaciers. 
+5. [Pre-procesamiento de datos distribuidos](https://github.com/cryohydromettools/Proyecto_MB_Regresion/blob/main/5_Distributed_preprocessing.ipynb) :bar_chart:: En este notebook aprendemos a descargar conjuntos de datos enrejados para cualquier glaciar en el mundo, incluidos el balance de masa geodésico, datos de espesor de hielo, datos topográficos como la pendiente de la superficie, la orientación, la distancia al borde, y cómo reducir fácilmente la escala de los datos climáticos para esos glaciares.
 
-6. [Bonus projects](https://github.com/Machine-Learning-in-Glaciology-Workshop/Project_MB_Regression/blob/main/6_Bonus_Projects.ipynb) :diamonds:: In this notebook we introduce the two bonus projects: one focusing on predicting gridded geodetic mass balance rates, and another one inferring distriburted glacier ice thickness. 
+6. [Proyectos adicionales](https://github.com/cryohydromettools/Proyecto_MB_Regresion/blob/main/6_Bonus_Projects.ipynb) :diamonds:: En este notebook presentamos los dos proyectos adicionales: uno centrado en predecir tasas de balance de masa geodésico enrejadas y otro en inferir el espesor del hielo glaciar distribuido.
 
-> We will be updating this project iteratively. If you come across any typos or mistakes in the notebooks, please feel free to make a pull request!
+> Actualizaremos este proyecto de manera iterativa. Si encuentras algún error o equivocación en los notebooks, no dudes en hacer un pull request.
