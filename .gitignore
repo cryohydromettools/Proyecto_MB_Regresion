@@ -6,3 +6,4 @@ env/
 __pycache__/
 .ipynb_checkpoints
 2_Data_exploration_resolve.ipynb
+3_Training_resolve.ipynb
