@@ -9,3 +9,5 @@ __pycache__/
 3_Training_resolve.ipynb
 4_Validation_resolve.ipynb
 OGGM_data_Finse_practic/
+Data/df_distributed_training_raw.csv
+Data/df_distributed_training.csv
