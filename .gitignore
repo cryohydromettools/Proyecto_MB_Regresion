@@ -12,3 +12,5 @@ OGGM_data_Finse_practic/
 Data/df_distributed_training_raw.csv
 Data/df_distributed_subset.csv
 Data/df_distributed_training.csv
+5_Distributed_preprocessing.ipynb
+6_Bonus_Projects.ipynb
